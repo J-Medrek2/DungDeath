@@ -7,7 +7,7 @@ int Bat::getHealth() const
 
 std::string Bat::getHealthAsString() const
 {
-	return ("" + health);
+	return "test";
 }
 
 std::string Bat::getRenderString() const

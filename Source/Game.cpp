@@ -2,6 +2,7 @@
 #include "Constants.h"
 #include "Font.h"
 #include "Player.h"
+#include "Bat.h"
 
 #include <iostream>
 #include <sstream>
@@ -91,6 +92,7 @@ bool DungeonDeathGame::init()
 	viewport_panel->setPosY(340);
 	viewport_panel->setWidth(20);
 	viewport_panel->setHeight(20);
+	
 	panels[1] = viewport_panel;
 
 	StatsPanel* stats_panel = new StatsPanel();

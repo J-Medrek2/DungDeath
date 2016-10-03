@@ -1,11 +1,16 @@
 #pragma once
 #include <Engine/Sprite.h>
 #include <string>
+#include "GameObject.h"
 namespace ASGE {
 	class Renderer;
 	class Sprite;
 }
 
+class Player : public GameObject
+{
+
+};
 class Player
 {
 public:

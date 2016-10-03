@@ -156,6 +156,7 @@
     <ClInclude Include="..\..\Source\Constants.h" />
     <ClInclude Include="..\..\Source\Font.h" />
     <ClInclude Include="..\..\Source\Game.h" />
+    <ClInclude Include="..\..\Source\GameObject.h" />
     <ClInclude Include="..\..\Source\GamePanel.h" />
     <ClInclude Include="..\..\Source\InputPanel.h" />
     <ClInclude Include="..\..\Source\MapPanel.h" />

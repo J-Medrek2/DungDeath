@@ -1,8 +1,11 @@
 #pragma once
+
 #include <Engine/OGLGame.h>
+
 
 class Player;
 class UIPanel;
+class Bat;
 struct Font;
 
 class DungeonDeathGame:

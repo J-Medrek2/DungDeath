@@ -84,6 +84,8 @@ bool DungeonDeathGame::init()
 	game_panel->addOutput("You have entered a dark cave");
 	panels[0] = game_panel;
 
+	Bat* enemy_bat = nullptr;
+
 	ViewportPanel* viewport_panel = new ViewportPanel;
 	viewport_panel->setPosX((game_panel->getPosX() + (game_panel->getWidth() * BORDER_CELL_WIDTH) + PANEL_PADDING));
 	viewport_panel->setPosY(340);

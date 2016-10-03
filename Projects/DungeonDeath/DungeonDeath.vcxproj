@@ -152,6 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\Bat.h" />
     <ClInclude Include="..\..\Source\Constants.h" />
     <ClInclude Include="..\..\Source\Font.h" />
     <ClInclude Include="..\..\Source\Game.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="..\..\Source\ViewportPanel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Bat.cpp" />
     <ClCompile Include="..\..\Source\Font.cpp" />
     <ClCompile Include="..\..\Source\Game.cpp" />
     <ClCompile Include="..\..\Source\GamePanel.cpp" />

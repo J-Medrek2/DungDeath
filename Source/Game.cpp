@@ -80,6 +80,8 @@ bool DungeonDeathGame::init()
 	game_panel->setPosY(70);
 	game_panel->setHeight(35);
 	game_panel->setWidth(35);
+	game_panel->addOutput("Welcome to Dungeon Death");
+	game_panel->addOutput("You have entered a dark cave");
 	panels[0] = game_panel;
 
 	ViewportPanel* viewport_panel = new ViewportPanel;

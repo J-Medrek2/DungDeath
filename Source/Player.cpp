@@ -44,7 +44,7 @@ Player::Player(PlayerClass c)
 void Player::loadAvatar(std::shared_ptr<ASGE::Renderer> renderer)
 {
 	avatar = renderer->createSprite();
-	avatar->loadTexture("Resources\\Textures\\avatar2");
+	avatar->loadTexture("..\\..\\Resources\\Textures\\avatar");
 	avatar->size[0] = 92;
 	avatar->size[1] = 92;
 }

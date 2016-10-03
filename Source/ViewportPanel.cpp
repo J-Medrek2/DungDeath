@@ -1,28 +1,26 @@
 #include "ViewportPanel.h"
 #include <Engine/Renderer.h>
 #include <string>
+#include "Bat.h"
 
-const std::string bat_string =
-R"(
-ENEMY: BAT
 
-         mm
-      /^(  )^\  
-      \,(..),/      
-        V~~V 
 
-"I am a Creature from
-the darkest depths of 
-your mind!!!"
 
-Health : (100%) ########
-)";
-
+void ViewportPanel::setObject(Bat* enemy)
+{
+	
+}
 void ViewportPanel::render(std::shared_ptr<ASGE::Renderer> renderer)
 {
 	UIPanel::render(renderer);
+	
+	if (object)
+	{
+		auto obj_x = getPosX() + 20;
+		auto obj_y = getPosY() + 2;
 
-	auto bat_x = getPosX() + 20;
-	auto bat_y = getPosY() + 2;
-	renderer->renderText(bat_string.c_str(), bat_x, bat_y, ASGE::COLOURS::TOMATO);
+		auto str = object->getRenderString();
+		str.append(object->getHealthAsString());
+		renderer->renderText(str.c_str(), obj_x, obj_y, ASGE::COLOURS::TOMATO);
+	}
 }
